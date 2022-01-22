@@ -482,11 +482,22 @@
             </li>
           </ul>
         </div>
-        <div>
-          <b>Подпишитесь на рассылку</b>
-          <form action="">
-            <input type="email" name="" id="" />
-            <button>Подписаться</button>
+        <div class="footer-right">
+          <b class="subscribe-title">Подпишитесь на рассылку</b>
+          <form class="form-input-email" action="">
+            <input
+              class="input-email"
+              type="email"
+              name=""
+              id=""
+              placeholder="E-mail"
+            />
+            <button type="submit" class="btn-send-email">
+              Подписаться
+              <svg width="24" height="24">
+                <use href="images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -502,11 +513,13 @@
         </button>
 
         <form action="">
-          <p>Оставьте свои данные, мы вам перезвоним</p>
-          <input type="text" name="" id="" />
-          <input type="tel" name="" id="" />
-          <input type="email" name="" id="" />
-          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <p class="title-modal-form">
+            Оставьте свои данные, мы вам перезвоним
+          </p>
+          <input type="text" name="name" id="" />
+          <input type="tel" name="phone" id="" />
+          <input type="email" name="mail" id="" />
+          <textarea name="coment" id="" cols="30" rows="10"></textarea>
           <input type="checkbox" name="" id="" />
           <button type="submit">Отправить</button>
         </form>
