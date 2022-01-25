@@ -604,6 +604,7 @@
               name=""
               id=""
               placeholder="E-mail"
+              required
             />
             <button type="submit" class="btn-send-email">
               Подписаться
@@ -631,73 +632,96 @@
           </p>
 
           <div class="form-field">
-            <label for="name">Имя</label>
-            <div class="input-wraper">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                class="input input-name"
-                placeholder=" "
-              />
-              <svg class="input-icon input-icon-person" width="18" height="18">
-                <use href="images/icons.svg#icon-person"></use>
-              </svg>
-            </div>
+            <label>
+              Имя
+              <div class="input-wraper">
+                <input
+                  type="text"
+                  name="name"
+                  class="input input-name"
+                  placeholder=" "
+                  required
+                />
+                <svg
+                  class="input-icon input-icon-person"
+                  width="18"
+                  height="18"
+                >
+                  <use href="images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+            </label>
           </div>
 
           <div class="form-field">
-            <label for="phone">Телефон</label>
-            <div class="input-wraper">
-              <input
-                type="tel"
-                name="phone"
-                id="phone"
-                class="input input-phone"
-                placeholder=" "
-              />
-              <svg class="input-icon input-icon-phone" width="18" height="18">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </div>
+            <label>
+              Телефон
+              <div class="input-wraper">
+                <input
+                  type="tel"
+                  name="phone"
+                  class="input input-phone"
+                  placeholder=" "
+                  required
+                />
+                <svg class="input-icon input-icon-phone" width="18" height="18">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </label>
           </div>
 
           <div class="form-field">
-            <label for="email">Почта</label>
-            <div class="input-wraper">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="input input-email"
-                placeholder=" "
-              />
-              <svg class="input-icon input-icon-email" width="18" height="18">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-            </div>
+            <label>
+              Почта
+              <div class="input-wraper">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="input input-email"
+                  placeholder=" "
+                  required
+                />
+                <svg class="input-icon input-icon-email" width="18" height="18">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </label>
           </div>
 
-          <label>
-            Коментарий
-            <textarea
-              class="input input-coment"
-              name="coment"
-              id=""
-              placeholder="Введите текст"
-            ></textarea>
-          </label>
+          <div class="form-field form-field-coment">
+            <label>
+              Коментарий
+              <textarea
+                class="input input-coment"
+                name="coment"
+                id=""
+                placeholder="Введите текст"
+              ></textarea>
+            </label>
+          </div>
 
-          <label>
-            <input type="checkbox" name="" id="" />
-            Соглашаюсь с рассылкой и принимаю
-            <a
-              href="https://zakon.rada.gov.ua/laws/show/435-15#:~:text=%D0%9F%D0%9E%D0%9D%D0%AF%D0%A2%D0%A2%D0%AF%20%D0%A2%D0%90%20%D0%A3%D0%9C%D0%9E%D0%92%D0%98%20%D0%94%D0%9E%D0%93%D0%9E%D0%92%D0%9E%D0%A0%D0%A3"
-              target="_blank"
-              rel="noopener, noreferrer"
-              >Условия договора</a
-            >
-          </label>
+          <div class="form-field form-field-checkbox">
+            <label class="label-checkbox">
+              <input
+                class="input-checkbox"
+                type="checkbox"
+                name="checkbox"
+                id=""
+                required
+              />
+              Соглашаюсь с рассылкой и принимаю
+              <span class="icon-checkbox"></span>
+              <a
+                class="link link-checkbox"
+                href="https://zakon.rada.gov.ua/laws/show/435-15#:~:text=%D0%9F%D0%9E%D0%9D%D0%AF%D0%A2%D0%A2%D0%AF%20%D0%A2%D0%90%20%D0%A3%D0%9C%D0%9E%D0%92%D0%98%20%D0%94%D0%9E%D0%93%D0%9E%D0%92%D0%9E%D0%A0%D0%A3"
+                target="_blank"
+                rel="noopener, noreferrer"
+                >Условия договора</a
+              >
+            </label>
+          </div>
 
           <button type="submit" class="btn-text btn-modal">Отправить</button>
         </form>
