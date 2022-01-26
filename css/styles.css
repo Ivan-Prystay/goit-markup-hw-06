@@ -745,7 +745,7 @@ button {
   margin-left: 35px;
 }
 
-.input-checkbox {
+.visualy-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -765,14 +765,30 @@ button {
   position: absolute;
   top: 0;
   left: -25px;
+  display: flex;
 }
 
-.input-checkbox:checked + .icon-checkbox {
+/* .input-checkbox:checked + .icon-checkbox {
   background-image: url(../images/icon-check.svg);
   background-color: var(--accent-color);
   border-color: var(--accent-color);
-  background-size: contain;
-  background-origin: content-box;
+  border: none;
+} */
+
+.input-checkbox:checked + .icon-checkbox {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  border: none;
+}
+
+.icon-check {
+  fill: transparent;
+}
+
+.input-checkbox:checked + .icon-checkbox .icon-check {
+  align-items: center;
+  justify-content: center;
+  fill: #ffffff;
 }
 
 .link-checkbox {
